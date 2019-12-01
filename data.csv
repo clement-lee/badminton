@@ -1,0 +1,381 @@
+year,player1,player2,games1,games2
+2013,Lee CW,T Sugiarto,2,0
+2013,K Parupalli,Du Pengyu,1,2
+2013,J Ø Jørgensen,Nguyễn TM,1,2
+2013,Lin D,Chen L,2,0
+2013,Lee CW,S Evans,2,0
+2013,M Zilberman,D H Rumbaka,0,2
+2013,V Ivanov,M Lahnsteiner,2,0
+2013,Y Tan,Wang ZM,0,2
+2013,M Zwiebler,V Atrashchenkov,2,1
+2013,H Shu,T Penty,0,2
+2013,Hsu J-h,Simon Santoso,2,1
+2013,H-K Vittinghus,T Sugiarto,1,2
+2013,Hu Y,N Karunaratne,2,0
+2013,E Ekiring,Jarolim Vicen,2,0
+2013,P Koukal,E Meijs,2,1
+2013,R Must,K Parupalli,1,2
+2013,T Ueda,Ashton Chen Yong Zhao,2,1
+2013,V Lång,V Axelsen,0,2
+2013,Son W-h,Du Pengyu,1,2
+2013,B Ponsana,Matthieu Lo Ying Ping,2,0
+2013,M Myhre,H Hurskainen,0,2
+2013,Chou T-c,I Utrosa,2,0
+2013,Lee D-k,J Ø Jørgensen,1,2
+2013,Wong W K,A Jayaram,1,2
+2013,O Guerrero,P Abián,0,2
+2013,D Domke,J Frohlich,2,0
+2013,J Wu,Nguyễn TM,0,2
+2013,Lin D,S Pongnairat,2,0
+2013,D Zavadsky,E Heino,2,0
+2013,R Ouseph,Chong W F,0,2
+2013,Sony Dwi Kuncoro,Derek Wong Zi Liang,0,2
+2013,V Malkov,Liew D,1,2
+2013,S Sasaki,Alistair Casey,2,0
+2013,L Wraber,Chen L,0,2
+2013,Lee CW,Du Pengyu,2,1
+2013,Nguyễn TM,Lin D,0,2
+2013,Lee CW,D H Rumbaka,2,1
+2013,V Ivanov,Wang ZM,1,2
+2013,M Zwiebler,T Penty,2,0
+2013,Hsu J-h,T Sugiarto,0,2
+2013,Hu Y,E Ekiring,2,0
+2013,P Koukal,K Parupalli,0,1
+2013,T Ueda,V Axelsen,2,0
+2013,T Saensomboonsuk,Du Pengyu,1,2
+2013,B Ponsana,H Hurskainen,2,1
+2013,Chou T-c,J Ø Jørgensen,1,2
+2013,A Jayaram,P Abián,0,2
+2013,D Domke,Nguyễn TM,0,2
+2013,E Pang,Lin D,0,2
+2013,D Zavadsky,Chong W F,0,2
+2013,Derek Wong Zi Liang,Liew D,0,2
+2013,S Sasaki,Chen L,0,2
+2013,Lee CW,Lin D,1,2
+2013,Lee CW,Wang ZM,2,0
+2013,M Zwiebler,T Sugiarto,0,2
+2013,Hu Y,K Parupalli,0,2
+2013,T Ueda,Du Pengyu,1,2
+2013,B Ponsana,J Ø Jørgensen,1,2
+2013,P Abián,Nguyễn TM,1,2
+2013,Lin D,Chong W F,2,0
+2013,Liew D,Chen L,0,2
+2013,Lee CW,T Sugiarto,2,0
+2013,K Parupalli,Du Pengyu,1,2
+2013,J Ø Jørgensen,Nguyễn TM,1,2
+2013,Lin D,Chen L,2,0
+2014,Lee CW,Wang ZM,2,0
+2014,Chou T-c,V Axelsen,0,2
+2014,T Sugiarto,E Pang,2,0
+2014,Son W-h,Chen L,1,2
+2014,Lee CW,Lee D-k,2,0
+2014,K Parupalli,D Domke,1,2
+2014,D Paiola,D Obernosterer,1,2
+2014,Wang ZM,M Rogalski,2,0
+2014,P Koukal,V Ivanov,2,0
+2014,K Momota,Wei N,1,2
+2014,V Atrashchenkov,D Karunaratne,1,2
+2014,J Ø Jørgensen,M Moreels,2,0
+2014,E Heino,G Greco,2,0
+2014,S Sasaki,O Guerrero,2,0
+2014,R Must,Chou T-c,1,2
+2014,H Shu,Nguyễn TM,0,2
+2014,V Axelsen,H Hurskainen,2,0
+2014,J Wu,E Meijs,0,2
+2014,M Zilberman,V Lång,1,2
+2014,A Y Tjong,Hu Y,0,2
+2014,D Zavadsky,V Malkov,0,2
+2014,D Wong,T Sugiarto,0,2
+2014,M Borg,E Pang,0,2
+2014,T Ueda,Tian HW,1,2
+2014,T Saensomboonsuk,K Merrilees,2,0
+2014,J Frohlich,Y Tan,0,2
+2014,Hsu J-h,H-K Vittinghus,0,2
+2014,S Pongnairat,J Maliekal,2,0
+2014,B Leverdez,Son W-h,1,2
+2014,S Kidambi,I Utrosa,2,1
+2014,R Ouseph,Chong W F,2,1
+2014,M Zwiebler,N Karunaratne,2,0
+2014,L Wraber,Chen L,0,2
+2014,Lee CW,V Axelsen,2,0
+2014,T Sugiarto,Chen L,0,2
+2014,Lee CW,D Domke,2,0
+2014,S Evans,D Obernosterer,2,0
+2014,Wang ZM,P Koukal,2,1
+2014,Wei N,D Karunaratne,2,1
+2014,J Ø Jørgensen,E Heino,2,0
+2014,S Sasaki,Chou T-c,0,2
+2014,P Abián,Nguyễn TM,1,2
+2014,V Axelsen,E Meijs,2,0
+2014,V Lång,Hu Y,1,2
+2014,V Malkov,T Sugiarto,0,2
+2014,E Pang,Tian HW,2,0
+2014,T Saensomboonsuk,A Jayaram,2,0
+2014,Y Tan,H-K Vittinghus,0,2
+2014,S Pongnairat,Son W-h,0,2
+2014,S Kidambi,R Ouseph,2,0
+2014,M Zwiebler,Chen L,0,2
+2014,Lee CW,Chen L,0,2
+2014,Lee CW,S Evans,2,0
+2014,Wang ZM,Wei N,2,0
+2014,J Ø Jørgensen,Chou T-c,0,2
+2014,Nguyễn TM,V Axelsen,0,2
+2014,Hu Y,T Sugiarto,0,2
+2014,E Pang,T Saensomboonsuk,2,1
+2014,H-K Vittinghus,Son W-h,0,2
+2014,S Kidambi,Chen L,0,2
+2014,Lee CW,Wang ZM,2,0
+2014,Chou T-c,V Axelsen,0,2
+2014,T Sugiarto,E Pang,2,0
+2014,Son W-h,Chen L,1,2
+2015,Chen L,V Axelsen,2,0
+2015,K Momota,Wei N,2,0
+2015,Lee CW,Hu Y,2,0
+2015,Lin D,J Ø Jørgensen,0,2
+2015,R Must,L Wraber,2,0
+2015,R Ouseph,T Saensomboonsuk,0,2
+2015,D Wong,Y Tan,2,0
+2015,V Axelsen,P Koukal,2,0
+2015,A Dziółko,V Malkov,2,1
+2015,H. S. Prannoy,A Y Tjong,2,0
+2015,E Ekiring,D Zavadsky,2,0
+2015,K Momota,D Domke,2,0
+2015,T Rouxel,M Giuffre,1,2
+2015,K Parupalli,E Meijs,2,0
+2015,Lee D-k,Nguyễn TM,1,2
+2015,Chou T-c,Z Zulkiffli,0,2
+2015,E Heino,S Evans,1,2
+2015,T Sugiarto,P Abián,2,0
+2015,H Shu,Wei N,1,2
+2015,Lee CW,K Navickas,2,0
+2015,O Guerrero,M Zwiebler,0,2
+2015,B Leverdez,T Penty,1,2
+2015,H Hurskainen,Wang ZM,0,2
+2015,M Rogalski,K Tago,2,0
+2015,R Maddaloni,Hu Y,0,2
+2015,Hsu J-h,M Zilberman,2,0
+2015,M Fariman,S Kidambi,0,2
+2015,S Sasaki,A Pochtarov,2,0
+2015,K Merrilees,H-K Vittinghus,0,2
+2015,D Paiola,D Obernosterer,2,1
+2015,S Pongnairat,Lin D,0,2
+2015,V Lång,Son W-h,0,2
+2015,M Myhre,M Ludik,0,2
+2015,B Ponsana,J Ø Jørgensen,0,2
+2015,Chen L,K Momota,2,0
+2015,Lee CW,J Ø Jørgensen,2,0
+2015,Chen L,R Must,2,0
+2015,T Saensomboonsuk,D Wong,2,0
+2015,V Axelsen,A Dziółko,2,0
+2015,H. S. Prannoy,E Ekiring,2,0
+2015,K Momota,M Giuffre,2,0
+2015,K Parupalli,Nguyễn TM,1,2
+2015,Z Zulkiffli,S Evans,2,0
+2015,T Sugiarto,Wei N,1,2
+2015,Lee CW,M Zwiebler,2,1
+2015,T Penty,Wang ZM,1,2
+2015,M Rogalski,Hu Y,1,2
+2015,Hsu J-h,S Kidambi,0,2
+2015,S Sasaki,H-K Vittinghus,0,2
+2015,D Paiola,Lin D,0,2
+2015,D H Rumbaka,Son W-h,1,2
+2015,M Ludik,J Ø Jørgensen,0,2
+2015,Chen L,Lee CW,2,0
+2015,Chen L,T Saensomboonsuk,2,0
+2015,V Axelsen,H. S. Prannoy,2,1
+2015,K Momota,Nguyễn TM,2,0
+2015,Z Zulkiffli,Wei N,0,2
+2015,Lee CW,Wang ZM,2,0
+2015,Hu Y,S Kidambi,2,1
+2015,H-K Vittinghus,Lin D,0,2
+2015,Son W-h,J Ø Jørgensen,0,2
+2015,Chen L,V Axelsen,2,0
+2015,K Momota,Wei N,2,0
+2015,Lee CW,Hu Y,2,0
+2017,Son W-h,Lin D,0,2
+2017,V Axelsen,Chen L,2,0
+2017,Son W-h,K Koljonen,2,0
+2017,G Krausz,V Vattanirappel,2,1
+2017,T Saensomboonsuk,N Fransman,2,1
+2017,Z Zulkiffli,A Pochtarov,2,1
+2017,S Kidambi,S Sirant,2,0
+2017,L Corvée,Lin Y-h,2,1
+2017,A Antonsen,F Roth,2,0
+2017,T Sugiarto,Hu Y,2,0
+2017,Shi YQ,S Evans,2,0
+2017,M Myhre,Y Coelho,1,2
+2017,Wong W K,A Salah,2,0
+2017,L R Garrido,K Tsuneyama,0,2
+2017,Lin D,K Merrilees,2,0
+2017,F Burestedt,E Holst,0,2
+2017,R Ouseph,A Mendrek,2,0
+2017,P Abián,S Verma,0,2
+2017,M Dubowski,A S Ginting,0,2
+2017,Wei N,B S Praneeth,0,2
+2017,B Seguin,M Zwiebler,0,2
+2017,T Penty,Chou T-c,1,2
+2017,R Maddaloni,P S Low,2,0
+2017,M Moreels,Ng K L,0,2
+2017,R Must,E Heino,1,2
+2017,T Ueda,V Axelsen,1,2
+2017,M Caljouw,N Karunaratne,2,0
+2017,L Wraber,A Jayaram,0,2
+2017,S D Kuncoro,M Ludik,2,0
+2017,G J Paul,Chen L,0,2
+2017,M Carder,V Malkov,0,2
+2017,H-K Vittinghus,Tian HW,1,2
+2017,M Zilberman,Z Đurkinjak,0,2
+2017,B Leverdez,Lee CW,2,1
+2017,Lin D,V Axelsen,0,2
+2017,Son W-h,G Krausz,2,0
+2017,T Saensomboonsuk,Z Zulkiffli,2,0
+2017,S Kidambi,L Corvée,2,0
+2017,A Antonsen,T Sugiarto,2,0
+2017,Shi YQ,Y Coelho,2,1
+2017,Wong W K,K Tsuneyama,2,1
+2017,Lin D,E Holst,2,1
+2017,R Ouseph,S Verma,2,0
+2017,A S Ginting,B S Praneeth,1,2
+2017,M Zwiebler,Chou T-c,1,2
+2017,R Maddaloni,Ng K L,0,2
+2017,E Heino,V Axelsen,0,2
+2017,M Caljouw,A Jayaram,0,2
+2017,S D Kuncoro,Chen L,0,2
+2017,V Malkov,Tian HW,0,2
+2017,Z Đurkinjak,B Leverdez,1,2
+2017,Son W-h,T Saensomboonsuk,2,1
+2017,S Kidambi,A Antonsen,2,0
+2017,Shi YQ,Wong W K,1,2
+2017,Lin D,R Ouseph,2,1
+2017,B S Praneeth,Chou T-c,1,2
+2017,Ng K L,V Axelsen,0,2
+2017,A Jayaram,Chen L,0,2
+2017,Tian HW,B Leverdez,2,0
+2017,Son W-h,S Kidambi,2,0
+2017,Wong W K,Lin D,0,2
+2017,Chou T-c,V Axelsen,1,2
+2017,Chen L,Tian HW,2,0
+2018,Son W-h,Lin D,0,2
+2018,V Axelsen,Chen L,2,0
+2018,Son W-h,K Koljonen,2,0
+2018,G Krausz,V Vattanirappel,2,1
+2018,T Saensomboonsuk,N Fransman,2,1
+2018,Z Zulkiffli,A Pochtarov,2,1
+2018,S Kidambi,S Sirant,2,0
+2018,L Corvée,Lin Y-h,2,1
+2018,A Antonsen,F Roth,2,0
+2018,T Sugiarto,Hu Y,2,0
+2018,Shi YQ,S Evans,2,0
+2018,M Myhre,Y Coelho,1,2
+2018,Wong W K,A Salah,2,0
+2018,L R Garrido,K Tsuneyama,0,2
+2018,Lin D,K Merrilees,2,0
+2018,F Burestedt,E Holst,0,2
+2018,R Ouseph,A Mendrek,2,0
+2018,P Abián,S Verma,0,2
+2018,M Dubowski,A S Ginting,0,2
+2018,Wei N,B S Praneeth,0,2
+2018,B Seguin,M Zwiebler,0,2
+2018,T Penty,Chou T-c,1,2
+2018,R Maddaloni,P S Low,2,0
+2018,M Moreels,Ng K L,0,2
+2018,R Must,E Heino,1,2
+2018,T Ueda,V Axelsen,1,2
+2018,M Caljouw,N Karunaratne,2,0
+2018,L Wraber,A Jayaram,0,2
+2018,S D Kuncoro,M Ludik,2,0
+2018,G J Paul,Chen L,0,2
+2018,M Carder,V Malkov,0,2
+2018,H-K Vittinghus,Tian HW,1,2
+2018,M Zilberman,Z Đurkinjak,0,2
+2018,B Leverdez,Lee CW,2,1
+2018,Lin D,V Axelsen,0,2
+2018,Son W-h,G Krausz,2,0
+2018,T Saensomboonsuk,Z Zulkiffli,2,0
+2018,S Kidambi,L Corvée,2,0
+2018,A Antonsen,T Sugiarto,2,0
+2018,Shi YQ,Y Coelho,2,1
+2018,Wong W K,K Tsuneyama,2,1
+2018,Lin D,E Holst,2,1
+2018,R Ouseph,S Verma,2,0
+2018,A S Ginting,B S Praneeth,1,2
+2018,M Zwiebler,Chou T-c,1,2
+2018,R Maddaloni,Ng K L,0,2
+2018,E Heino,V Axelsen,0,2
+2018,M Caljouw,A Jayaram,0,2
+2018,S D Kuncoro,Chen L,0,2
+2018,V Malkov,Tian HW,0,2
+2018,Z Đurkinjak,B Leverdez,1,2
+2018,Son W-h,T Saensomboonsuk,2,1
+2018,S Kidambi,A Antonsen,2,0
+2018,Shi YQ,Wong W K,1,2
+2018,Lin D,R Ouseph,2,1
+2018,B S Praneeth,Chou T-c,1,2
+2018,Ng K L,V Axelsen,0,2
+2018,A Jayaram,Chen L,0,2
+2018,Tian HW,B Leverdez,2,0
+2018,Son W-h,S Kidambi,2,0
+2018,Wong W K,Lin D,0,2
+2018,Chou T-c,V Axelsen,1,2
+2018,Chen L,Tian HW,2,0
+2019,K Momota,B. Sai Praneeth,2,0
+2019,A Antonsen,Kantaphon Wangcharoen,2,0
+2019,K Momota,A Antonsen,1,0
+2019,K Momota,Phạm C C,2,0
+2019,L E Peñalver,M Moreels,2,0
+2019,Lin D,Nguyễn TM,2,1
+2019,Prannoy K,E Heino,2,1
+2019,K Nishimoto,K Koljonen,2,0
+2019,Wang T-w,R Maddaloni,2,0
+2019,Lee Z J,Y Coelho,2,0
+2019,Lu GZ,K Schäfer,2,0
+2019,J Christie,R Ouseph,2,0
+2019,M Ludik,Heo K-h,0,2
+2019,T Sugiarto,N Karunaratne,2,0
+2019,A S Ginting,G J Paul,2,0
+2019,R Must,T Penty,1,2
+2019,B. Sai Praneeth,J Ho-shue,2,0
+2019,Lee D-k,D Fan,2,0
+2019,L Muñoz,G Krausz,2,0
+2019,P Abián,K Tsuneyama,0,2
+2019,Liew D,K Phetpradab,2,0
+2019,F Burestedt,A Mendrek,2,0
+2019,E Lale,Ng K L,1,2
+2019,Lee C Y,Huang YX,2,0
+2019,V Malkov,Chen L,0,2
+2019,A Pochtarov,L Wraber,2,1
+2019,M Caljouw,K Wangcharoen,0,2
+2019,M Zilberman,C Kirchmayr,2,0
+2019,N Nguyen,S Kidambi,1,2
+2019,T Rouxel,S Sirant,2,0
+2019,Loh K Y,S Verma,2,1
+2019,M Rogalski,Z Đurkinjak,0,2
+2019,H-K Vittinghus,Chou T-c,1,2
+2019,K Momota,L E Peñalver,2,0
+2019,Lin D,Prannoy K,1,2
+2019,K Nishimoto,Wang T-w,2,1
+2019,Lee Z J,Lu GZ,0,3
+2019,J Christie,Heo K-h,2,0
+2019,T Sugiarto,J Ø Jørgensen,0,2
+2019,A S Ginting,T Penty,2,0
+2019,B. Sai Praneeth,Lee D-k,2,0
+2019,L Muñoz,K Tsuneyama,0,2
+2019,Liew D,A Antonsen,0,2
+2019,F Burestedt,Ng K L,0,2
+2019,Lee C Y,Chen L,0,2
+2019,A Pochtarov,K Wangcharoen,0,2
+2019,M Zilberman,S Kidambi,1,1
+2019,T Rouxel,Loh K Y,1,2
+2019,Z Đurkinjak,Chou T-c,0,2
+2019,K Momota,Prannoy K,2,0
+2019,K Nishimoto,Lee Z J,1,2
+2019,J Christie,J Ø Jørgensen,2,0
+2019,A S Ginting,B. Sai Praneeth,0,2
+2019,K Tsuneyama,A Antonsen,0,2
+2019,Ng K L,Chen L,1,2
+2019,K Wangcharoen,S Kidambi,2,0
+2019,Loh K Y,Chou T-c,1,2
+2019,K Momota,Lee Z J,2,0
+2019,J Christie,B. Sai Praneeth,2,0
+2019,A Antonsen,Chen L,2,0
+2019,K Wangcharoen,Chou T-c,2,1
