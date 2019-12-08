@@ -1,2 +1,5 @@
 *.pdf
 *.csv
+*.rds
+*.out
+*.jpg
