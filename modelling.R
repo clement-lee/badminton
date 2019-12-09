@@ -67,6 +67,7 @@ t0 <- system.time({
         update_eta = FALSE
     )
 })
+obj0$time <- t0
 
 gamma0 <- obj0$gamma_par
 df0.strength <- tibble(
@@ -93,17 +94,22 @@ gg0.strength <- df0.strength %>%
 
 
 ### 03) whole spectrum of beta = 1.0 / eta
+K <- 3L
+sds <- rep(0.3, K) #### can change
+M0 <- (sds %*% t(sds)) * (diag(0.3, K, K) + 0.7)
+
 set.seed(2000L)
 t1 <- system.time({
     obj1 <- mh_model(
-        y1, y2, x1, x2, m,
+        y1, y2, x1, x2, m, M0,
         eta = 0.5,
-        N = 20000L,
-        thin = 20L,
-        burnin = 100000L,
-        update_eta = TRUE
+        N = 2e+4L,
+        thin = 1e+3L,
+        burnin = 5e+6L,
+        print_freq = 1e+3L
     )
 })
+obj1$time <- t1
 
 gamma1 <- obj1$gamma_par
 df1.strength <- tibble(
