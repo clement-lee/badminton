@@ -203,3 +203,121 @@ List mh_model(const NumericVector y1,
   List output = List::create(Named("gamma_par") = gamma_mat, Named("gamma_initial") = gamma_init, Named("lpost") = lpost_df, Named("par") = par, Named("initial") = initial, Named("hyper") = hyper, Named("sds") = sds, Named("scalars") = scalars);
   return output;
 }
+
+// [[Rcpp::export]]
+List mh_bt(const NumericVector y1,
+           const NumericVector y2,
+           const IntegerVector x1,
+           const IntegerVector x2,
+           const int m,
+           mat M0_par,
+           const double eta = 1.0,
+           const double mu = 0.0,
+           const double sigma = 1.0,
+           const double a_eta = 1.0,
+           const double b_eta = 1.0,
+           const double m_mu = 0.0,
+           const double s_mu = 100.0,
+           const double a_sigma = 1.0,
+           const double b_sigma = 0.001,
+           const int N = 40000,
+           const int thin = 1,
+           const int burnin = 10000,
+           const int print_freq = 100) {
+  if (M0_par.n_rows != 3 || M0_par.n_cols != 3) {
+    stop("mh_bt: M0_par has to be 3x3 matrix.");
+  }
+  const NumericVector hypers = NumericVector::create(eta, sigma, a_eta, b_eta, s_mu, a_sigma, b_sigma);
+  if (is_true(any(hypers <= 0.0))) {
+    stop("mh_model: initial value of eta & other hyperparameters must be positive.");
+  }
+  NumericVector gamma_init = rnorm(m, mu, sigma);
+  gamma_init[0] = 0.0;
+  vec gamma_curr = as<vec>(gamma_init), gamma_prop = as<vec>(gamma_init), sds_gamma(m), par_curr(3), par_prop(3);
+  sds_gamma.fill(0.001);
+  par_curr[0] = 1.0;
+  par_curr[1] = mu;
+  par_curr[2] = sigma;
+  auto lpost = [y1, y2, x1, x2, a_eta, b_eta, m_mu, s_mu, a_sigma, b_sigma](const vec gamma, const vec par) {
+    double lpost = llik_model(y1, y2, x1, x2, gamma, par[0]) + lprior_model(gamma, par[0], par[1], par[2], a_eta, b_eta, m_mu, s_mu, a_sigma, b_sigma);
+    if (lpost != lpost) {
+      lpost = -INFINITY;
+    }
+    return lpost;
+  };
+  double lpost_curr = lpost(gamma_curr, par_curr), lpost_prop;
+  mat gamma_mat(N, m);
+  NumericVector eta_vec(N), mu_vec(N), sigma_vec(N), lpost_vec(N);
+  running_stat_vec<vec> stats_par(true);
+  mat M1_par(3, 3);
+  M0_par.col(0).zeros();
+  M0_par.row(0).zeros();
+  // run
+  int i, j;
+  for (i = 0; i < N * thin + burnin; i++) {
+    // update gamma
+    for (j = 1; j < m; j++) { // [0] not updated
+      gamma_prop = gamma_curr;
+      gamma_prop[j] = rnorm(1, gamma_curr[j], sds_gamma[j])[0];
+      lpost_prop = lpost(gamma_prop, par_curr);
+      update(gamma_curr[j], gamma_prop[j], lpost_curr, lpost_prop, sds_gamma[j], i, burnin);
+    }
+    // update eta, mu, sigma
+    if (i < 0.1 * burnin || runif(1)[0] < 0.05) {
+      par_prop = mvnrnd(par_curr, 0.01 / 2.0 * M0_par);
+    }
+    else {
+      par_prop = mvnrnd(par_curr, (2.34 * 2.34 / 2.0) * M1_par);
+    }
+    lpost_prop = lpost(gamma_curr, par_prop);
+    if (log(runif(1)[0]) < lpost_prop - lpost_curr) {
+      par_curr = par_prop;
+      lpost_curr = lpost_prop;
+    }
+    // adaptive
+    if (i < burnin) {
+      stats_par(par_curr);
+      M1_par = stats_par.cov();
+    }
+    // print & save
+    if ((i + 1) % print_freq == 0) {
+      Rcout << "Iteration " << i + 1 << ": lpost = " << lpost_curr << endl;
+      Rcout << "eta: " << par_curr[0] << endl;
+      Rcout << "mu: " << par_curr[1] << endl;
+      Rcout << "sigma: " << par_curr[2] << endl;
+      Rcout << "M1_par: " << M1_par << endl;
+      Rcout << endl;
+    }
+    if (i >= burnin && (i - burnin + 1) % thin == 0) {
+      j = (i - burnin + 1) / thin - 1;
+      gamma_mat.row(j) = gamma_curr.t();
+      eta_vec[j] = par_curr[0];
+      mu_vec[j] = par_curr[1];
+      sigma_vec[j] = par_curr[2];
+      lpost_vec[j] = lpost_curr;
+    }
+  }
+  // output
+  DataFrame lpost_df = DataFrame::create(Named("iteration") = seq_len(N), Named("lpost") = lpost_vec),
+    par = DataFrame::create(Named("eta") = eta_vec,
+                            Named("mu") = mu_vec,
+                            Named("sigma") = sigma_vec),
+    initial = DataFrame::create(Named("eta") = tv(eta),
+                                Named("mu") = tv(mu),
+                                Named("sigma") = tv(sigma)),
+    hyper = DataFrame::create(Named("a_eta") = tv(a_eta),
+                              Named("b_eta") = tv(b_eta),
+                              Named("m_mu") = tv(m_mu),
+                              Named("s_mu") = tv(s_mu),
+                              Named("a_sigma") = tv(a_sigma),
+                              Named("b_sigma") = tv(b_sigma)),
+    sds = DataFrame::create(Named("sd_eta") = tv(M1_par(0,0)),
+                            Named("sd_mu") = tv(M1_par(1,1)),
+                            Named("sd_sigma") = tv(M1_par(2,2))),
+    scalars = DataFrame::create(Named("N") = IntegerVector::create(N),
+                                Named("thin") = IntegerVector::create(thin),
+                                Named("burnin") = IntegerVector::create(burnin),
+                                Named("print_freq") = IntegerVector::create(print_freq));
+  List output = List::create(Named("gamma_par") = gamma_mat, Named("gamma_initial") = gamma_init, Named("gamma_sds") = sds_gamma, Named("lpost") = lpost_df, Named("par") = par, Named("initial") = initial, Named("hyper") = hyper, Named("sds") = sds, Named("scalars") = scalars);
+  return output;
+}

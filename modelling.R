@@ -56,15 +56,18 @@ x2 <- df1.matches$id2
 
 
 ### 02) Bradley-Terry model
+K <- 3L
+sds <- rep(0.3, K) #### can change
+M0 <- (sds %*% t(sds)) * (diag(0.3, K, K) + 0.7)
+
 set.seed(1000L)
 t0 <- system.time({
-    obj0 <- mh_model(
-        y1, y2, x1, x2, m,
-        eta = 1.0,
-        N = 20000L,
-        thin = 10L,
-        burnin = 50000L,
-        update_eta = FALSE
+    obj0 <- mh_bt(
+        y1, y2, x1, x2, m, M0,
+        N = 2e+4L,
+        thin = 1e+1L,
+        burnin = 5e+4L,
+        print_freq = 1e+3L
     )
 })
 obj0$time <- t0
@@ -94,15 +97,10 @@ gg0.strength <- df0.strength %>%
 
 
 ### 03) whole spectrum of beta = 1.0 / eta
-K <- 3L
-sds <- rep(0.3, K) #### can change
-M0 <- (sds %*% t(sds)) * (diag(0.3, K, K) + 0.7)
-
 set.seed(2000L)
 t1 <- system.time({
     obj1 <- mh_model(
         y1, y2, x1, x2, m, M0,
-        eta = 0.5,
         N = 2e+4L,
         thin = 1e+3L,
         burnin = 5e+6L,
