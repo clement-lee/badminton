@@ -102,9 +102,9 @@ t1 <- system.time({
     obj1 <- mh_model(
         y1, y2, x1, x2, m, M0,
         N = 2e+4L,
-        thin = 1e+3L,
+        thin = 2e+3L,
         burnin = 5e+6L,
-        print_freq = 1e+3L
+        print_freq = 2e+3L
     )
 })
 obj1$time <- t1
